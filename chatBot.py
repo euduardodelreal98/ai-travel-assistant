@@ -82,11 +82,11 @@ def main():
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     
     print("\n" + " 🛩️ " * 15)
-    print("  🌍 ¡HOLA! SOY VÍA, TU GUÍA EXPERTA DE VIAJES  ")
+    print("  🤖 ¡HOLA! SOY VÍA, TU GUÍA EXPERTA DE VIAJES  ")
     print("     Dime: ¿A qué lugar del mundo quieres ir hoy?" )
     print("(Escribe 'salir' o 'exit' para terminar la aventura)\n")
 
-    # 🔥 MODO DEMO
+    # MODO DEMO
     if not api_key:
         print("⚠️ Ejecutando en modo demo (sin API key válida)\n")
 
@@ -113,7 +113,7 @@ def main():
 
         return
 
-    # 🔥 TU CÓDIGO ORIGINAL
+    # CÓDIGO ORIGINAL CON API KEY
     client = OpenAI(
         api_key=api_key, 
         base_url="https://api.groq.com/openai/v1"
